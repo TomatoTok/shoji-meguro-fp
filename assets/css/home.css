@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.contenedor-header{
+ width: 100%;   
+ height: 700px;
+}
+#nombre{
+    font-size: 3.0rem;
+display: flex;
+font-weight: 400;
+padding-top: 450px;
+padding-left: 50px;
+}
+
+div.scroll > p{
+    display:flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+#quien-es{
+    background-color: #f4f4f4;
+}
+.info{
+    margin:30px 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+#indice{
+    border: gray 1px solid;
+    margin:20px;
+    width: 150px;
+    height: 260px;
+    border-radius: 5px;
+    justify-content: left;
+}
+#indice > ul> li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+    padding-top:5px;
+    margin-left: -10px;
+ }
+
+ span{
+     display: none;
+ }
+
+#vida-personal{
+}
+
+.btn-vm{
+    display: flex;
+    border: none;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 1.0rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    padding-left: 45%;
+}
+.btn-vm:hover{
+    cursor: pointer;
+    font-weight: 800;
+
+}
+
+h3{
+    padding-left: 35px;
+    font-size: 1.8rem;
+    padding-top: 10px;
+}
+section{
+    background-color: #f4f4f4;
+
+}
+
+/* contenido persona*/
+.panel{
+    display: flex;
+}
+
+#p2 h3 , #p4 h3{
+    background-color: blue;
+    color: red;
+    padding-left: 70%;
+    padding-bottom:10px;
+    font-size: 2.0rem;
+}
+
+#p1 > .caja,#p2 > .caja, #p3 > .caja,#p4 > .caja,#p5 > .caja{
+    display: flex;
+}
+
+#p1 >.caja > .contenido,#p2 >.caja > .contenido, #p3 >.caja > .contenido, #p4 >.caja > .contenido, #p5 >.caja > .contenido{
+    width: 66%;
+background-color: violet;
+
+}
+#p1 >.caja > .ilustracion, #p2 >.caja > .ilustracion, #p3 >.caja > .ilustracion, #p4 >.caja > .ilustracion, #p5 >.caja > .ilustracion{
+width: 33%;
+background-color: red;
+}
+
+/*Lista de juegos y animes*/
+.juegos , .anime {
+    margin: 20px;
+    
+}
+#juegos-lista > li , #anime-lista > li{
+    padding-bottom: 10px;
+}
