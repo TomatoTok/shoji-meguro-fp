@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/funcionesJS/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Shoji Meguro | Home</title>
@@ -14,15 +14,16 @@
 <body>
     <header>
         <div class="contenedor-header">
+            <div id="img-header-cont"><img src="/assets/img/sm1.png" alt="Shoji Meguro fotografia" id="img-header"></div>
             <h1 id="nombre">Shoji <br> Meguro.</h1>
 
             <div class="scroll">
-                <p>scroll v</p>
+                <p class="animate-scroll">scroll v</p>
             </div>
         </div>
     </header>
-
-    <section id="quien-es">
+    <div id="ajuste">
+    <section id="quien-es" class="contenedores">
         <h3>¿Quien es Shoji Meguro?</h3>
         <p class="info"><b>Shoji Meguro</b> es director y compositor de musica de videojuegos, se unio a Atlus en 1995.
             <b> Atlus Co. Ltd.</b> es una desarrolladora de videojuegos japonesa ubicada en Tokio, filial de SEGA.
@@ -39,7 +40,7 @@
             <li><a href="#referencias">Referencias</a></li>
         </ul>
     </section>
-    <section id="vida-personal">
+    <section id="vida-personal" class="contenedores">
         <h3>Vida Personal</h3>
         <p class="info">
             Nació en Tokio Japón. Cuando era adolecente se interesó por la música clásica y el jazz. En su trayectoria
@@ -56,7 +57,7 @@
                 Summoner: Soul
                 Hackers en Sega Saturn , componiendo alrededor de 50 piezas para el juego, así como Maken X en Dreamcast
                 .
-                <br>
+                <br><br>
                 La primera vez que se convirtió en un compositor destacado fue en <i> Shin Megami Tensei: Nocturne en
                     2003</i>,
                 donde se apartó un poco de la música de los juegos anteriores de la serie Megami Tensei , lo que le dio
@@ -68,7 +69,7 @@
         <button id="btn-vp" class="btn-vm" onclick="verMas('vm-vp','btn-vp',0)">Ver más</button>
 
     </section>
-    <section id="trayectoria">
+    <section id="trayectoria" class="contenedores">
         <h3>Trayectoria</h3>
         <p class="info">
             La carrera de Meguro fue impulsada al estrellato internacional en su oficio con su trabajo en Persona 3 ,
@@ -84,7 +85,7 @@
                 Persona 2: Innocent Sin y Eternal Punishment. A mediados de la década de 2010, Meguro se desempeñó como
                 director de sonido de tres títulos derivados de Persona, además de componer y producir la mayor parte de
                 la
-                banda sonora de Persona 5. <br>
+                banda sonora de Persona 5. <br> <br>
                 Meguro también contribuyó al próximo juego Project Re Fantasy, la película Mint
                 y Persona 5 Royal. También se desempeñó como compositor principal de Persona 5: The Animation ,
                 organizando
@@ -100,8 +101,8 @@
         </span>
         <button id="btn-ty" class="btn-vm" onclick="verMas('vm-ty','btn-ty',1)">Ver más</button>
     </section>
-    <section>
-        <article id="saga-persona">
+    <section class="contenedores">
+        <article id="saga-persona" class="contenedores">
             <h3>Saga Persona</h3>
             <p class="info">Persona (ペルソナ Perusona), (también conocida como: Shin Megami Tensei: Persona) es una serie
                 de videojuegos RPG desarrollados y publicados por Atlus. Esta saga es un spin-off de la serie de
@@ -121,10 +122,9 @@
         <article id="p1">
             <h3>Persona</h3>
             <div class="caja">
+                <button class="izq" onclick="sigIzq(0)"><</button>
                 <div class="contenido">
                     <div class="panel">
-                        <button class="izq" onclick="sigIzq(0)">
-                            < </button>
                                 <article id="p0-0">
                                     <p class="info">
                                         O tambien conocido como "<b><i>Revelations: Persona</i></b>", lanzado en Japón
@@ -138,14 +138,15 @@
                                         y enlazados a seres
                                         sobrenaturales conocidos como Persona, se unen para luchar contra los demonios
                                         que invaden su ciudad.
-                                        <br>
+                                        <br></p>
                                 </article>
                                 <span id="p0-1" class="info">
+                                    <p>
                                     A diferencia de los juegos de "Shin Megami Tensei" la trama de Persona no implica
                                     invocadores de
                                     demonios. En cambio la "Party" consta de un grupo de adolescentes proveídos de armas
                                     de fuego y
-                                    armamento de cuerpo a cuerpo. Cada uno puede invocar un Persona--Una faceta de su
+                                    armamento de cuerpo a cuerpo. Cada uno puede invocar un Persona una faceta de su
                                     personalidad usada en
                                     batalla para luchar contra demonios, funcionando como fuente para los "hechizos
                                     mágicos".
@@ -160,11 +161,13 @@
                                            Fecha de lanzamiento: 20 Septiembre de 1996 (JPN), 25 de Octubre 1997(USA), 29 Abril de 2009(PSP,JPN), 06 Julio 2010(PSP,JPN), 11 Agosto  2010(PSP,EUR). <br>
                                        </p>
                                     </span>
-                                <button class="der" onclick="sigDer(0)"> > </button>
                     </div>
                 </div>
+                <button class="der" onclick="sigDer(0)"> > </button>
                 <div class="ilustracion">
-                    <p>imagen</p>
+                    <img src="/assets/img/saga-persona/p1-hero-bg.png" alt="fondo blanco persona 1" class="img-persona img-persona-der" >
+
+                    <img src="/assets/img/saga-persona/p1-hero-limpio.png" alt="protagonista persona 1" class="img-persona" id="p1-img">
                 </div>
             </div>
         </article>
@@ -172,11 +175,14 @@
             <h3>Persona 2</h3>
             <div class="caja">
                 <div class="ilustracion">
-                    <p>imagen</p>
-                </div>
+                    <img src="/assets/img/saga-persona/p2-hero-bg.png" alt="fondo blanco persona 2" class="img-persona img-persona-izq" >
+                    <img src="/assets/img/saga-persona/p2-hero-limpio.png" alt="protagonistas persona 2" class="img-persona"id="p2-img">
 
+                </div>
+                <div class="compact">
+                <button class="izq" onclick="sigIzq(1)"><</button>
                 <div class="contenido">
-                    <div class="panel"> <button class="izq" onclick="sigIzq(1)"><</button>
+                    <div class="panel"> 
                         <article id="p1-0">
                             <p class="info">
                                 Hecho en Japón para la PlayStation, desarrollado por Atlus. Innocent Sin y Eternal Punishment
@@ -216,14 +222,14 @@
                 </div>
                 <button class="der" onclick="sigDer(1)"> > </button>
             </div>
-
+            </div>
         </article>
         <article id="p3">
             <h3>Persona 3</h3>
             <div class="caja">
+                <button class="izq" onclick="sigIzq(2)"><</button>
                 <div class="contenido">
                     <div class="panel">
-                        <button class="izq" onclick="sigIzq(2)"><</button>
                         <article id="p2-0">
                     <p class="info">
                         Shin Megami Tensei: Persona 3, lanzado en Japón simplemente como Persona 3, es el cuarto juego
@@ -257,11 +263,12 @@
                        
                        </p>
                     </span>
-                    <button class="der" onclick="sigDer(2)">></button>
                 </div>
             </div>
+            <button class="der" onclick="sigDer(2)">></button>
                 <div class="ilustracion">
-                    <p>imagen</p>
+                    <img src="/assets/img/saga-persona/p3-hero-bg.png" alt="fondo blanco persona 3" class="img-persona img-persona-der">
+                    <img src="/assets/img/saga-persona/p3-hero.png" alt="protagonista persona 3" class="img-persona"  id="p3-img">
                 </div>
             </div>
 
@@ -270,12 +277,13 @@
             <h3>Persona 4</h3>
             <div class="caja">
                 <div class="ilustracion">
-                    <p>imagen</p>
+                    <img src="/assets/img/saga-persona/p4-hero-bg.png" alt="fondo blanco persona 4" class="img-persona img-persona-izq">
+                    <img src="/assets/img/saga-persona/p4-hero.png" alt="protagonista persona 4" class="img-persona" id="p4-img">
                 </div>
-
+                <div class="compact">
+                <button class="izq" onclick="sigIzq(3)"><</button>
                 <div class="contenido">
                     <div class="panel">
-                <button class="izq" onclick="sigIzq(3)"><</button>
                         <article id="p3-0">
                     <p class="info">
                         Shin Megami Tensei: Persona 4 es un videojuego de rol desarrollado y publicado por Atlus para la
@@ -312,16 +320,17 @@
                 </div>
             </div>
             <button class="der" onclick="sigDer(3)">></button>
-            </div>
+            </div>    
+        </div>
 
 
         </article>
         <article id="p5">
             <h3>Persona 5</h3>
             <div class="caja">
+                <button class="izq" onclick="sigIzq(4)"><</button>
                 <div class="contenido">
                     <div class="panel">
-                        <button class="izq" onclick="sigIzq(4)"><</button>
                         <article id="p4-0">
                     <p class="info">
                         Persona 5 es un videojuego de rol desarrollado por Atlus para las
@@ -347,22 +356,25 @@
                     <span id="p4-2" class="info">
                         <p><b><i>Ficha técnica:</i></b></p>
                        <p>
-                           Desarrolladora:  <br>
-                           Distibuidora:  <br>
-                           Compositor:  . <br>
-                           Plataformas: . <br>
-                           Fecha de lanzamiento: . <br>
+                           Desarrolladora: Atlus. <br>
+                           Distibuidora: Atlus, Deep Silver. <br>
+                           Director: Katsura Hashino.
+                           Compositor: Shoji Meguro. <br>
+                           Plataformas: PlayStation 3, PlayStation 4. <br>
+                           Fecha de lanzamiento: 15 Septiembre de 2016(JPN), 4 Abril 2017 (WW). <br>
                        </p>
                     </span>
                 </div>
             </div>
             <button class="der" onclick="sigDer(4)">></button>
                 <div class="ilustracion">
-
+                    <img src="/assets/img/saga-persona/p5-hero-bg.png" alt="fondo blanco persona 5" class="img-persona img-persona-der" >
+                    <img src="/assets/img/saga-persona/p5-hero.png" alt="protagonista persona 5" class="img-persona" id="p5-img">
                 </div>
             </div>
 
-
+        </section>
+        <section class="contenedores">
         </article>
         <article class="juegos">
             <p>Listado de juegos en los que participo Shoji Meguro</p>
@@ -450,9 +462,9 @@
             </ul>
         </article>
     </section>
-    <section id="musica">
+    <section id="musica" class="contenedores">
         <h3>Musica</h3>
-        <p>¿Cuanto influenció la musica en la vida de Shoji Meguro?</p>
+        <p class="info">¿Cuanto influenció la musica en la vida de Shoji Meguro?</p>
         <p class="info">Como se mencionó anteriormente la música captó la atención de Meguro cuando era solo un
             adolecente siendo el estilo del jazz y musica clasica sus preferidos. Se interesó en los gustos de jazz
             artistas como T-Square , Herb Alpert , y Casiopea.
@@ -491,7 +503,11 @@
         </span>
         <button id="btn-ms" class="btn-vm" onclick="verMas('vm-ms','btn-ms',3)">Ver más</button>
     </section>
+    </div>
+    
+    <footer></footer>
     <section id="referencias">
+        <p>Referencias:</p>
         <a href="https://es.wikipedia.org/wiki/Sh%C5%8Dji_Meguro">Wikipedia - Shoji Meguro</a>
         <a href="https://es.abcdef.wiki/wiki/Shoji_Meguro">abcdef - Shoji Meguro</a>
         <a href="https://es.wikipedia.org/wiki/Atlus">Wikipedia - Atlus</a>
@@ -501,9 +517,11 @@
         <a href="https://es.wikipedia.org/wiki/Shin_Megami_Tensei:_Persona_4">Persona 4</a>
         <a href="https://es.wikipedia.org/wiki/Persona_5">Persona 5</a>
         <a href="https://es.wikipedia.org/wiki/Persona_(serie)">Serie Persona</a>
+        <a href="https://www.sega.com">Sega</a>
+        <a href="https://atlus.com">Atlus</a>
     </section>
-    <script src="/funcionesJS/assets/js/script.js"></script>
-    <footer></footer>
+    <script src="/assets/js/script.js"></script>
+    
 </body>
 
 </html>

@@ -4,11 +4,11 @@ var posPanel = [0, 0, 0, 0,0];
 function verMas(idPanel, idBtn, pos) {
     if (!vmArr[pos]) {
         document.getElementById(idPanel).style.display = 'inline';
-        document.getElementById(idBtn).innerHTML = "ver menos";
+        document.getElementById(idBtn).innerHTML = "Ver menos";
         vmArr[pos] = true;
     } else {
         document.getElementById(idPanel).style.display = 'none';
-        document.getElementById(idBtn).innerHTML = "ver más";
+        document.getElementById(idBtn).innerHTML = "Ver más";
         vmArr[pos] = false;
     }
 }
