@@ -326,6 +326,7 @@ text-align: center;
 .derechos > p{
     font-size: 0.9rem;
     font-weight: 400;
+    margin: 10px 20px;
 }
 
 /*Mobile*/
