@@ -184,9 +184,8 @@ background: linear-gradient(90deg, rgba(251,2,2,1) 1%, rgba(25,25,25,1) 80%, rgb
 .compact{
     display: flex;
     align-items: center;
-    padding-left: 90px;
     margin-right:-100px;
-    width: 100%;
+    width: 80%;
 }
 
 #p1 >.caja >.compact > .contenido,#p2 >.caja >.compact >.contenido , #p3 >.caja >.compact > .contenido, #p4 >.caja >.compact >.contenido, #p5 >.caja >.compact > .contenido{
@@ -197,6 +196,7 @@ border-radius: 15px;
 }
 #p1 >.caja > .ilustracion, #p2 >.caja > .ilustracion, #p3 >.caja > .ilustracion, #p4 >.caja > .ilustracion, #p5 >.caja > .ilustracion{
 width: 29%;
+justify-content: left;
 }
 .img-persona{
     width: 240px;
@@ -214,7 +214,7 @@ width: 29%;
     position:relative;
     bottom: 0px;
     opacity: 1;
-    margin-right: -244.5px;
+    margin-right: -243.5px;
 
 }
 
@@ -334,7 +334,7 @@ text-align: center;
         min-width: 375px;
     }
     #nombre{
-        top:20px ;
+        bottom:400px ;
         padding-left: 20px;
         font-weight: 600;
         text-shadow: 2px 2px #101;
@@ -346,15 +346,16 @@ text-align: center;
         background-size: cover;
         position: relative;
         width: 100%;
-        height: 700px;
+        height: 500px;
         top:70px;
     }
     header, .contenedor-header, #img-header{
         margin-top: -40px;
         margin-bottom: 20px;
+        height: 500px;
     }
     .scroll{
-        margin-top: -80px;
+        margin-top: -70px;
         text-shadow: 1px 1px #101;
     }
     .info{
@@ -362,7 +363,7 @@ text-align: center;
         font-size: 0.9rem;
         font-weight: 600;
         margin: 10px;
-        padding: 0px;
+        padding:0px 5px;
     }
     b{
         font-weight: 400;
@@ -380,14 +381,12 @@ text-align: center;
 #p1 > .caja, #p3 > .caja, #p5 > .caja {
     display: flex;
     flex-wrap: wrap-reverse;
-    width: 100%;
+    width: 90%;
     margin-top:200px;
     padding-bottom: 60px;
     min-width: 90px;
-
 }
 .ilustracion{
-    margin-left: -60px;
     padding-right: 100px;
     width: 100%;
 }
@@ -410,7 +409,7 @@ text-align: center;
     margin-bottom: 280px;
     padding-bottom: 40px;
     min-width: 90px;
-
+    width: 90%;
 }
 .contenedores{
     width: 100%;
@@ -424,8 +423,8 @@ text-align: center;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding:0px 0px;
-    margin-right:auto;
+    margin-right:0px;
+    padding-left: 5%;
 }
 
 .juegos , .anime{
